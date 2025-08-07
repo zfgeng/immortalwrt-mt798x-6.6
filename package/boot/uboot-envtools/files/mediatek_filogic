@@ -138,6 +138,9 @@ openembed,som7981)
 openwrt,one)
 	ubootenv_add_ubi_default
 	;;
+ruijie,rg-ew3000gx*)
+	ubootenv_add_uci_config "/dev/mtd2" "0x0" "0x20000" "0x20000" "1"
+	;;
 smartrg,sdg-8733|\
 smartrg,sdg-8733a|\
 smartrg,sdg-8734)
