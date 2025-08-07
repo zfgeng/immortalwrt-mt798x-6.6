@@ -53,6 +53,7 @@ mediatek_setup_interfaces()
 	livinet,zr-3020|\
 	livinet,zr-3020-ubootmod|\
 	qihoo,360t7|\
+	ruijie,rg-ew3000gx-pro|\
 	sl,3000-emmc|\
 	routerich,ax3000|\
 	routerich,ax3000-ubootmod)
@@ -215,6 +216,7 @@ mediatek_setup_macs()
 		wan_mac=$(macaddr_add "$lan_mac" 1)
 		label_mac=$wan_mac
 		;;
+	ruijie,rg-ew3000gx-pro|\
 	ruijie,rg-x60-pro)
 		label_mac=$(mtd_get_mac_ascii product_info ethaddr)
 		wan_mac=$label_mac
