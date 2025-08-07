@@ -758,6 +758,7 @@ setup_model()
 	xiaomi,mi-router-wr30u* |\
 	xiaomi,mi-router-ax3000t* |\
 	*rax3000m* |\
+ 	ruijie,rg-ew3000gx-pro |\
 	sl,3000-emmc|\
 	h3c,nx30pro |\
 	konka,komi-a31 |\
