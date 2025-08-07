@@ -46,19 +46,19 @@
 	leds {
 		compatible = "gpio-leds";
 
-		led_status_mesh: mesh {
+		led_status_mesh: led-0 {
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&pio 5 GPIO_ACTIVE_LOW>;
 		};
 
-		led_status_red: red {
+		led_status_red: led-1 {
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_RED>;
 			gpios = <&pio 13 GPIO_ACTIVE_LOW>;
 		};
 
-		led_status_green: green {
+		led_status_green: led-2 {
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&pio 6 GPIO_ACTIVE_LOW>;
