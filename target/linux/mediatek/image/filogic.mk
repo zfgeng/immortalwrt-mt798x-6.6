@@ -1164,6 +1164,17 @@ define Device/jcg_q30-pro
 endef
 TARGET_DEVICES += jcg_q30-pro
 
+define Device/ruijie_rg-ew3000gx-pro
+  DEVICE_VENDOR := Ruijie
+  DEVICE_MODEL := RG-EW3000GX Pro
+  DEVICE_DTS := mt7981b-ruijie-rg-ew3000gx-pro
+  DEVICE_DTS_DIR := ../dts
+  BLOCKSIZE := 128k
+  PAGESIZE := 2048
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+endef
+TARGET_DEVICES += ruijie_rg-ew3000gx-pro
+
 define Device/jdcloud_re-cp-03
   DEVICE_VENDOR := JDCloud
   DEVICE_MODEL := RE-CP-03
